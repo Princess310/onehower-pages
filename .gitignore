@@ -1,0 +1,8 @@
+# ignore node_modules
+node_modules/
+
+# Ignore build output
+build/
+
+# Ignore npm debug file
+npm-debug.log

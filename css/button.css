@@ -1,0 +1,41 @@
+.oh-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.oh-btn:hover {
+  cursor: pointer;
+}
+.oh-btn:focus {
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  outline: none;
+}
+.oh-btn.oh-btn-primary {
+  color: #fff;
+  background-color: #00bcd4;
+}
+.oh-btn.oh-btn-primary:hover {
+  background-color: rgba(0, 188, 212, 0.7);
+}
+.oh-btn.oh-btn-secondary {
+  color: #fff;
+  background-color: #ff4081;
+}
+.oh-btn.oh-btn-secondary:hover {
+  background-color: rgba(255, 64, 129, 0.7);
+}
+.oh-btn:disabled {
+  cursor: default;
+}
+.oh-btn:disabled.oh-btn-primary {
+  background-color: rgba(0, 188, 212, 0.5);
+}
+.oh-btn:disabled.oh-btn-secondary {
+  background-color: rgba(255, 64, 129, 0.5);
+}

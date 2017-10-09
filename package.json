@@ -1,0 +1,36 @@
+{
+  "name": "onehower-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Princess310/onehower-pages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^3.5.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-util": "^3.0.7",
+    "precss": "^1.4.0",
+    "stream-combiner2": "^1.1.1",
+    "serve": "^6.0.2",
+    "cross-env": "^3.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Princess310/onehower-pages/issues"
+  },
+  "homepage": "https://github.com/Princess310/onehower-pages#readme"
+}
