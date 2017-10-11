@@ -3,6 +3,7 @@ node_modules/
 
 # Ignore build output
 build/
+css/
 
 # Ignore npm debug file
 npm-debug.log
