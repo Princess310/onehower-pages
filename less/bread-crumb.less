@@ -1,0 +1,24 @@
+@import "variables.less";
+
+.oh-breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 16px;
+  background-color: @bg-default;
+
+  .oh-breadcrumb-item {
+    display: inline-block;
+
+    &.active {
+      color: @font-words;
+    }
+
+    + .oh-breadcrumb-item {
+
+      &::before {
+        content: '/';
+        padding: 0 8px;
+        color: @font-words;
+      }
+    }
+  }
+}

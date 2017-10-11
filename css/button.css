@@ -10,11 +10,11 @@
 }
 .oh-btn:hover {
   cursor: pointer;
+  background-color: rgba(221, 221, 221, 0.7);
 }
 .oh-btn:focus {
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
   outline: none;
+  box-shadow: 0 0 8px #ccc;
 }
 .oh-btn.oh-btn-primary {
   color: #fff;
