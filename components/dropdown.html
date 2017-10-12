@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>onehowerUI - Dropdown</title>
+  <link rel="stylesheet" href="../build/css/bundle.css" />
+  <style>
+    .oh-dropdown {
+      display: inline-block;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="oh-dropdown">
+    <button class="oh-btn dropdown-trigger">Dropdown</button>
+    <div class="oh-dropdown-menu">
+      <div class="oh-dropdown-item">Item 1</div>
+      <div class="oh-dropdown-item">Item 2</div>
+      <div class="oh-dropdown-item">Item 3</div>
+    </div>
+  </div>
+
+  <a class="oh-dropdown">
+    <div class="dropdown-trigger">Dropdown</div>
+    <div class="oh-dropdown-menu">
+      <div class="oh-dropdown-item">Item 1</div>
+      <div class="oh-dropdown-item">Item 2</div>
+      <div class="oh-dropdown-item">Item 3</div>
+    </div>
+  </a>
+
+  <script>
+    const doms = document.querySelectorAll('.oh-dropdown .dropdown-trigger');
+    doms.forEach((dom) => {
+      dom.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dom.classList.toggle('active');
+      });
+    });
+
+    document.addEventListener('touchstart', (e) => {
+      doms.forEach((dom) => {
+        dom.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      doms.forEach((dom) => {
+        dom.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
